@@ -21,7 +21,7 @@ WhizReviewer is a generative large language model that has undergone additional 
 
 ### Model Specifications
 
-- **Release Date**: August 13, 2024
+- **Release Date**: August 16, 2024
 
 - **Knowledge Cutoff Date**: January 2024
 
