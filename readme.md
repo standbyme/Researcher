@@ -129,4 +129,4 @@ This code is licensed under the *Apache 2.0* License, and the model weight under
 ## 📮 Contact
 
 - Submit an Issue
-- Email us at: wengsyx@gmail.com
+- Email us at: zhuminjun@westlake.edu.cn, wengsyx@gmail.com
