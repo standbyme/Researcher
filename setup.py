@@ -1,29 +1,24 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cycleresearcher',
+    name='ai_researcher',
     version='0.1.0',
-    description='CycleResearcher, A LLM for autoresearcher',
-    author='xxx',
-    author_email='xxx',
-    url='xxx',
-    packages=find_packages(where='./cycleresearcher'),
-    package_dir={'': './cycleresearcher'},
+    description='AI-powered research paper generation and review',
+    author='AI Research Team',
+    author_email='zhuminjun@westlake.edu.cn',
+    url='https://github.com/zhu-minjun/Researcher',
+    packages=find_packages(),
     install_requires=[
-        'numpy',
-        'pandas',
-        'torch',
-        'transformers',
-        'scikit-learn',
-        'tqdm',
-        'openai',
-        'matplotlib',
-        # Add other dependencies as needed
+        'transformers>=4.48.2',
+        'torch>=1.13.0',
+        'bibtexparser',
     ],
     classifiers=[
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.8',
 )

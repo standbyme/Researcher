@@ -2,17 +2,17 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
+import argparse
+import json
 import random
 
 import numpy as np
 import torch
-import torch.nn.functional as F
 import tqdm
-import argparse
-import json
-from data_builder import load_data
-from model import load_tokenizer, load_model
-from metrics import get_roc_metrics, get_precision_recall_metrics
+from ai_researcher.detect.data_builder import load_data
+from ai_researcher.detect.metrics import get_roc_metrics, get_precision_recall_metrics
+from ai_researcher.detect.model import load_tokenizer, load_model
+
 
 def get_samples(logits, labels):
     assert logits.shape[0] == 1
