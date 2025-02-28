@@ -1,3 +1,4 @@
+from ai_researcher.utils import get_reviewer_score
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
 
@@ -89,16 +90,16 @@ class CycleReviewer:
             paper_context = [paper_context]
 
 
-        prompts = []
+
         generated_reviews = []
         batch_size = 10
-        for n in range(len(paper_context),batch_size):
+        for n in range(0,len(paper_context),batch_size):
             # Apply chat template
-
-            for _ in range(min(batch_size, n - p)):
+            prompts = []
+            for r in range(min(batch_size, len(paper_context) - n)):
                 messages = [
                     {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": paper_context[n]}
+                    {"role": "user", "content": paper_context[r+n]}
                 ]
                 input_text = self.tokenizer.apply_chat_template(
                     messages,
@@ -110,7 +111,7 @@ class CycleReviewer:
             sampling_params = SamplingParams(
                 temperature=0.4,
                 top_p=0.95,
-                max_tokens=4096
+                max_tokens=7000
             )
 
             # Generate review
@@ -124,8 +125,7 @@ class CycleReviewer:
                 # Process generated text
                 generated_text = outputs[output_num].outputs[0].text
                 # Use existing CycleResearcher utility to parse generated text
-
-                review = get_reviewer_score(generated_review)
+                review = get_reviewer_score(generated_text)
                 generated_reviews.append(review)
 
         return generated_reviews

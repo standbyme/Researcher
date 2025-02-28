@@ -148,7 +148,8 @@ def print_paper_summary(paper):
         print(f"\n{key.capitalize()}:")
         print(paper.get(key, 'N/A') + '...' if paper.get(key) else 'N/A')
 
-def get_reviewer_score(generated_text):
+
+def get_reviewer_score_7B(generated_text):
     try:
         pred = {}
         reviews = []
@@ -163,13 +164,126 @@ def get_reviewer_score(generated_text):
         questions = []
         flag_for_ethics_review = []
         confidence = []
-        paper_desion = ''
+        paper_decision = ''
+        meta_review = ''
+        for review in generated_text.split('**********\n'):
+            if review != '':
+                if '## Paper Decision\n\n' in review:
+                    review, paper_decision = review.split('## Paper Decision\n\n')[:2]
+                    paper_decision = paper_decision.split('\n')[0]
+                    if 'accept' in paper_decision.lower():
+                        paper_decision = 'Accept'
+                    else:
+                        paper_decision = 'Reject'
+                    break
+                if '## Meta Review\n\n' in review:
+                    review, meta_review = review.split('## Meta Review\n\n')[:2]
+
+                elif '## Summary\n\n' in review and '## Soundness\n\n' in review and '## Presentation\n\n' in review:
+                    reviews.append(review)
+
+                    if '#@ Summary\n\n' in review:
+                        summary.append(review.split('## Summary\n\n')[1].split('##')[0])
+                    else:
+                        summary.append('')
+
+                    if '## Soundness\n\n' in review:
+                        soundness.append(review.split('## Soundness\n\n')[1].split('##')[0])
+                    else:
+                        soundness.append('')
+
+                    if '## Presentation\n\n' in review:
+                        presentation.append(review.split('## Presentation\n\n')[1].split('##')[0])
+                    else:
+                        presentation.append('')
+
+                    if '## Contribution\n\n' in review:
+                        contribution.append(review.split('## Contribution\n\n')[1].split('##')[0])
+                    else:
+                        contribution.append('')
+
+                    if '## Strengths\n\n' in review:
+                        strengths.append(review.split('## Strengths\n\n')[1].split('##')[0])
+                    else:
+                        strengths.append('')
+
+                    if '## Weaknesses\n\n' in review:
+                        weaknesses.append(review.split('## Weaknesses\n\n')[1].split('##')[0])
+                    else:
+                        weaknesses.append('')
+
+                    if '## Questions\n\n' in review:
+                        questions.append(review.split('## Questions\n\n')[1].split('##')[0])
+                    else:
+                        questions.append('')
+
+                    if '## Flag For Ethics Review\n\n' in review:
+                        flag_for_ethics_review.append(
+                            review.split('## Flag For Ethics Review\n\n')[1].split('##')[0])
+                    else:
+                        flag_for_ethics_review.append('')
+
+                    if '## Rating\n\n' in review:
+                        review_rate.append(review.split('## Rating\n\n')[1].split('##')[0])
+                        rating.append(float(review.split('## Rating\n\n')[1].split('##')[0][0]))
+                    else:
+                        review_rate.append('')
+                        rating.append(0)
+
+                    if '## Confidence\n\n' in review:
+                        confidence.append(review.split('## Confidence\n\n')[1].split('******')[0])
+                    else:
+                        confidence.append('')
+        if paper_decision == '':
+            return None
+        pred['content'] = generated_text
+        pred['reviews'] = reviews
+        pred['summary'] = summary
+        pred['review_rate'] = review_rate
+        pred['rating'] = rating
+        pred['soundness'] = soundness
+        pred['presentation'] = presentation
+        pred['contribution'] = contribution
+        pred['strength'] = strengths
+        pred['weaknesses'] = weaknesses
+        pred['questions'] = questions
+        pred['flag_for_ethics_review'] = flag_for_ethics_review
+        pred['confidence'] = confidence
+        pred['paper_decision'] = paper_decision
+        pred['meta_review'] = meta_review
+        pred['avg_rating'] = sum(rating) / len(rating)
+
+        return pred
+    except:
+        return None
+
+
+def get_reviewer_score_123B(generated_text):
+    try:
+        pred = {}
+        reviews = []
+        review_rate = []
+        rating = []
+        summary = []
+        soundness = []
+        presentation = []
+        contribution = []
+        strengths = []
+        weaknesses = []
+        questions = []
+        flag_for_ethics_review = []
+        confidence = []
+        paper_decision = ''
         meta_review = ''
         for review in generated_text.split('## Reviewer\n'):
             if review != '':
                 if '## Paper Decision\n\n' in review:
-                    review, paper_desion = review.split('## Paper Decision\n\n')[:2]
-                    paper_desion = paper_desion.split('\n')[0]
+                    review, paper_decision = review.split('## Paper Decision\n\n')[:2]
+                    paper_decision = paper_decision.split('\n')[0]
+                    if 'accept' in paper_decision.lower():
+                        paper_decision = 'Accept'
+                    else:
+                        paper_decision = 'Reject'
                 if '## Meta Review\n\n' in review:
                     review, meta_review = review.split('## Meta Review\n\n')[:2]
                 reviews.append(review)
@@ -227,7 +341,7 @@ def get_reviewer_score(generated_text):
                 else:
                     confidence.append('')
 
-        if paper_desion == '':
+        if paper_decision == '':
             return None
         pred['content'] = generated_text
         pred['reviews'] = reviews
@@ -242,12 +356,24 @@ def get_reviewer_score(generated_text):
         pred['questions'] = questions
         pred['flag_for_ethics_review'] = flag_for_ethics_review
         pred['confidence'] = confidence
-        pred['paper_desion'] = paper_desion
+        pred['paper_decision'] = paper_decision
         pred['meta_review'] = meta_review
+        pred['avg_rating'] = sum(rating) / len(rating)
 
         return pred
     except:
         return None
+
+
+def get_reviewer_score(generated_text):
+    pred = get_reviewer_score_7B(generated_text)
+    if pred == None:
+        pred = get_reviewer_score_123B(generated_text)
+    elif pred['rating'] == 0:
+        pred = get_reviewer_score_123B(generated_text)
+    return pred
+
+
 
 def print_review_summary(review):
     """
