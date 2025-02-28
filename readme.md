@@ -22,9 +22,38 @@ Our objectives are:
 
   
 
+
 ## 🚀 Getting Started
 
+
 `pip install -e .`
+
+### Start with CycleResearcher
+```
+# Import necessary libraries
+from ai_researcher import CycleResearcher
+from ai_researcher.utils import print_paper_summary
+
+# Initialize CycleResearcher with default 12B model
+researcher = CycleResearcher(model_size="12B")
+from pprint import pprint
+
+# Load references from BibTeX file
+with open('cycleresearcher_references.bib', 'r') as f:
+    references_content = f.read()
+pprint(references_content.split('@')[:3])
+
+# Generate paper with specific references
+referenced_paper = researcher.generate_paper(
+    topic="AI Researcher",
+    references=references_content,
+    n=10
+)
+
+# Print summary of generated papers
+for paper in referenced_paper:
+    print_paper_summary(paper)
+```
 
 ### 📚 Tutorials and Demos
 
@@ -85,22 +114,17 @@ CycleResearcher-12B achieves an average score of 5.36, approaching the 5.69 aver
 ## 🔍 Model Detection
 
 ```
-from cycleresearcher.detect import FastDetectGPT
-detector = FastDetectGPT(
-    model_name="meta-llama/Llama-3.1-8B",
-    reference_model_name=None, 
-    device="cuda"
-)
+from ai_researcher import AIDetector
 
+# Initialize AI detector
+detector = AIDetector(device='cpu')
 
-text = "paper..."
-result = detector.detect(text)
-print(f"Criterion: {result['criterion']:.4f}")
-print(f"Probability of being machine-generated: {result['probability']*100:.0f}%")
+# Analyze the generated paper
+detection_result = detector.analyze_paper(paper)
 
-# BATCH
-texts = ["Paper 1...", "Paper 2...", "Paper 3..."]
-results = detector.detect_batch(texts)
+print("Detection Results:")
+print(f"Probability of AI generation: {detection_result['probability'] * 100:.2f}%")
+print(f"Confidence Level: {detection_result['confidence_level']}")
 ```
 
 
