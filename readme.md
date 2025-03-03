@@ -147,7 +147,7 @@ note={under review}
 
 ## 📄 License
 
-This code is licensed under the *Apache 2.0* License, and the model weight under the *CycleResearcher-License*, see the [LICENSE](LICENSE.md) file for details.
+This code and the models' weight under the *CycleResearcher-License*, see the [LICENSE](LICENSE.md) file for details.
 
 
 
