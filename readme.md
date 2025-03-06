@@ -62,7 +62,7 @@ We have prepared comprehensive tutorials for both CycleResearcher and CycleRevie
 ##### Available Tutorials
 - [Tutorial 1:]() Getting Started with CycleResearcher 🚀
 - [Tutorial 2:]() Understanding CycleReviewer 📝
-- [Tutorial 3:]() Advanced Features🔥 Rejection Sampling with CycleResearcher and CycleReviewer [TODO]
+
 
 
 
