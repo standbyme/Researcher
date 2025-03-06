@@ -60,8 +60,8 @@ for paper in referenced_paper:
 We have prepared comprehensive tutorials for both CycleResearcher and CycleReviewer to help users better understand and utilize these models. Our tutorials cover everything you need to get started and make the most of our model suite.
 
 ##### Available Tutorials
-- [Tutorial 1:]() Getting Started with CycleResearcher 🚀
-- [Tutorial 2:]() Understanding CycleReviewer 📝
+- [Tutorial 1:](https://github.com/zhu-minjun/Researcher/blob/main/Tutorial/tutorial_1.ipynb) Getting Started with CycleResearcher 🚀
+- [Tutorial 2:](https://github.com/zhu-minjun/Researcher/blob/main/Tutorial/tutorial_2.ipynb) Understanding CycleReviewer 📝
 
 
 
@@ -91,9 +91,9 @@ We have prepared comprehensive tutorials for both CycleResearcher and CycleRevie
 
 |       Model Name        |                 Pre-training Language Model                  |                           HF Link                            |
 | :---------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| CycleResearcher-ML-12B  | [Mistral-Nemo-Instruct-2407](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407) | [🤗 link](https://huggingface.co/WestlakeNLP/CycleResearcher-ML-12B) |
-| CycleResearcher-ML-72B  | [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct) | [🤗 link](https://huggingface.co/WestlakeNLP/CycleResearcher-ML-72B) |
-| CycleResearcher-ML-123B | [Mistral-Large-2](https://huggingface.co/mistralai/Mistral-Large-Instruct-2407) | [🤗 link](https://huggingface.co/WestlakeNLP/CycleResearcher-ML-123B) |
+| CycleResearcher-ML-12B  | [Mistral-Nemo-Instruct-2407](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407) | [🤗 link](https://huggingface.co/WestlakeNLP/CycleResearcher-12B) |
+| CycleResearcher-ML-72B  | [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct) | [🤗 link](https://huggingface.co/WestlakeNLP/CycleResearcher-72B) |
+| CycleResearcher-ML-123B | [Mistral-Large-2](https://huggingface.co/mistralai/Mistral-Large-Instruct-2407) | [🤗 link](https://huggingface.co/WestlakeNLP/CycleResearcher-123B) |
 
 
 
