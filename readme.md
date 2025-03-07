@@ -136,8 +136,7 @@ print(f"Confidence Level: {detection_result['confidence_level']}")
 
 ## 📚 Citation
 
-Our paper is available on [![arXiv](https://img.shields.io/badge/arXiv-2411.00816-b31b1b.svg)](https://arxiv.org/abs/2411.00816) and [![OpenReview](https://img.shields.io/badge/OpenReview-bjcsVLoHYs-brightgreen.svg)](https://openreview.net/forum?id=bjcsVLoHYs). If CycleResearcher is helpful to your work, please cite our paper.
-
+Our paper is available on [![arXiv](https://img.shields.io/badge/arXiv-2411.00816-b31b1b.svg)](https://arxiv.org/abs/2411.00816) and [![OpenReview](https://img.shields.io/badge/OpenReview-ICLR2025-8b1a1a.svg)](https://openreview.net/forum?id=bjcsVLoHYs). If CycleResearcher is helpful to your work, please cite our paper.
 ```bibtex
 @inproceedings{
 weng2025cycleresearcher,
