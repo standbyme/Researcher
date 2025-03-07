@@ -135,13 +135,12 @@ If you use CycleResearcher in your research, please cite our paper:
 
 ```bibtex
 @inproceedings{
-anonymous2024cycleresearcher,
+weng2025cycleresearcher,
 title={CycleResearcher: Improving Automated Research via Automated Review},
-author={Anonymous},
-booktitle={Submitted to The Thirteenth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=bjcsVLoHYs},
-note={under review}
+author={Yixuan Weng and Minjun Zhu and Guangsheng Bao and Hongbo Zhang and Jindong Wang and Yue Zhang and Linyi Yang},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=bjcsVLoHYs}
 }
 ```
 
