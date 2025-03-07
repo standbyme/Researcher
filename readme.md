@@ -1,9 +1,15 @@
 # CycleResearcher: Improving Automated Research via Automated Review [ICLR 2025]
 
 
-[![GitHub stars](https://img.shields.io/github/stars/zhu-minjun/Researcher)](https://github.com/username/CycleResearcher/stargazers) [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/) [![arXiv](https://img.shields.io/badge/arXiv-2411.00816-b31b1b.svg)](https://arxiv.org/abs/2411.00816)
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/zhu-minjun/Researcher)](https://github.com/username/CycleResearcher/stargazers) 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/) 
+[![arXiv](https://img.shields.io/badge/arXiv-2411.00816-b31b1b.svg)](https://arxiv.org/abs/2411.00816)
+[![Homepage](https://img.shields.io/badge/Homepage-ai--researcher.cn-green.svg)](http://ai-researcher.cn)
 
 
+</div>
 
   ![](img/method.png)
 
