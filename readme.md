@@ -154,4 +154,4 @@ This code and the models' weight under the *CycleResearcher-License*, see the [L
 ## 📮 Contact
 
 - Submit an Issue
-- Email us at: wengsyx@gmail.com
+- Email us at: wengsyx@gmail.com,zhuminjun@westlake.edu.cn
