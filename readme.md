@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/zhu-minjun/Researcher)](https://github.com/username/CycleResearcher/stargazers) 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/) 
 [![arXiv](https://img.shields.io/badge/arXiv-2411.00816-b31b1b.svg)](https://arxiv.org/abs/2411.00816)
-[![OpenReview](https://img.shields.io/badge/OpenReview-bjcsVLoHYs-brightgreen.svg)](https://openreview.net/forum?id=bjcsVLoHYs)
+[![OpenReview](https://img.shields.io/badge/OpenReview-ICLR2025-8b1a1a.svg)](https://openreview.net/forum?id=bjcsVLoHYs)
 [![Homepage](https://img.shields.io/badge/Homepage-ai--researcher.cn-green.svg)](http://ai-researcher.cn)
 
 </div>
