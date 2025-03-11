@@ -28,7 +28,7 @@ By creating a complete feedback loop between research generation and evaluation,
 - 🚀 Accelerate scientific discovery
 
 <div align="center">
-  <img src="img/ecosystem.png" alt="AI Research Ecosystem" width="90%">
+  <img src="img/ai-research.jpg" alt="AI Research Ecosystem" width="90%">
 </div>
 
 ## 🚀 Getting Started
