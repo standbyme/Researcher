@@ -33,7 +33,7 @@ def get_paper_from_generated_text(generated_text):
         latex += generated_text.split('```latex')[1].split('```')[0]
 
         # Parse title and abstract from LaTeX
-        title = latex.split(r'\title{')[1].split(r'\begin{abstract}')[0]
+        title = latex.split(r'\title{')[1].split(r'\begin{abstract}')[0].replace('}','')
         abstract = latex.split(r'\begin{abstract}')[1].split('\end{abstract}')[0]
 
         # Extract and parse experimental setup
