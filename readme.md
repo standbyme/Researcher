@@ -10,7 +10,7 @@
 
 
 <div align="center">
-  <img src="img/ai-research.jpg" alt="AI Research Ecosystem" width="90%">
+  <img src="img/ai-research.png" alt="AI Research Ecosystem" width="90%">
 </div>
 </div>
 
@@ -102,7 +102,7 @@ for i, review in enumerate(review_results[0]['reviews']):
     print(f"Reviewer {i+1} Rating: {review.get('rating', 'N/A')}")
     print(f"Reviewer {i+1} Summary: {review.get('summary', 'N/A')[:100]}...")
 ```
-<img src="img/deepreviewer.jpg" alt="CycleResearcher Architecture" width="80%">
+<img src="img/deepreviewer.png" alt="CycleResearcher Architecture" width="80%">
 
 ## 📊 Model Evaluation
 
