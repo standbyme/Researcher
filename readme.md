@@ -1,4 +1,4 @@
-# CycleResearcher: AI-powered Research and Review Ecosystem [ICLR 2025]
+# AI-powered Research and Review Ecosystem [ICLR 2025]
 
 <div align="center">
   
