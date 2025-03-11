@@ -8,8 +8,10 @@
 [![OpenReview](https://img.shields.io/badge/OpenReview-ICLR2025-8b1a1a.svg)](https://openreview.net/forum?id=bjcsVLoHYs)
 [![Homepage](https://img.shields.io/badge/Homepage-ai--researcher.cn-green.svg)](http://ai-researcher.cn)
 
-<img src="img/method.png" alt="CycleResearcher Architecture" width="80%">
 
+<div align="center">
+  <img src="img/ai-research.jpg" alt="AI Research Ecosystem" width="90%">
+</div>
 </div>
 
 ## 🔍 Overview
@@ -27,9 +29,7 @@ By creating a complete feedback loop between research generation and evaluation,
 - 🔄 Establish research-review feedback loops
 - 🚀 Accelerate scientific discovery
 
-<div align="center">
-  <img src="img/ai-research.jpg" alt="AI Research Ecosystem" width="90%">
-</div>
+<img src="img/method.png" alt="CycleResearcher Architecture" width="80%">
 
 ## 🚀 Getting Started
 
@@ -102,6 +102,7 @@ for i, review in enumerate(review_results[0]['reviews']):
     print(f"Reviewer {i+1} Rating: {review.get('rating', 'N/A')}")
     print(f"Reviewer {i+1} Summary: {review.get('summary', 'N/A')[:100]}...")
 ```
+<img src="img/deepreviewer.png" alt="CycleResearcher Architecture" width="80%">
 
 ## 📊 Model Evaluation
 
