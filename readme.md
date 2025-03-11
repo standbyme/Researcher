@@ -102,7 +102,7 @@ for i, review in enumerate(review_results[0]['reviews']):
     print(f"Reviewer {i+1} Rating: {review.get('rating', 'N/A')}")
     print(f"Reviewer {i+1} Summary: {review.get('summary', 'N/A')[:100]}...")
 ```
-<img src="img/deepreviewer.png" alt="CycleResearcher Architecture" width="80%">
+<img src="img/deepreviewer.jpg" alt="CycleResearcher Architecture" width="80%">
 
 ## 📊 Model Evaluation
 
