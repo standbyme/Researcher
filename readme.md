@@ -233,8 +233,8 @@ for i, review in enumerate(review_results[0]['reviews']):
   </tr>
   <tr>
     <td>DeepReview-13K</td>
-    <td>11,500+</td>
-    <td>1,500+</td>
+    <td>13,378</td>
+    <td>1,286</td>
     <td>Multi-perspective review dataset for DeepReviewer training</td>
     <td><a href="https://huggingface.co/WestlakeNLP/DeepReview-13K">🤗 link</a></td>
   </tr>
@@ -306,6 +306,21 @@ author={Yixuan Weng and Minjun Zhu and Guangsheng Bao and Hongbo Zhang and Jindo
 booktitle={The Thirteenth International Conference on Learning Representations},
 year={2025},
 url={https://openreview.net/forum?id=bjcsVLoHYs}
+}
+```
+
+
+if DeepReviewer is helpful to your work, please cite our paper:
+
+```bibtex
+@misc{zhu2025deepreviewimprovingllmbasedpaper,
+      title={DeepReview: Improving LLM-based Paper Review with Human-like Deep Thinking Process}, 
+      author={Minjun Zhu and Yixuan Weng and Linyi Yang and Yue Zhang},
+      year={2025},
+      eprint={2503.08569},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.08569}, 
 }
 ```
 
