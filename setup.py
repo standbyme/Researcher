@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'transformers>=4.48.2',
-        'torch>=1.13.0',
+        'vllm>=0.7.2',
         'bibtexparser',
     ],
     classifiers=[
