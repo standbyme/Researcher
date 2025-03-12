@@ -36,7 +36,7 @@ By creating a complete feedback loop between research generation and evaluation,
 ### Installation
 
 ```bash
-pip install -e .
+pip install ai_researcher
 ```
 
 ### Using CycleResearcher
