@@ -222,21 +222,21 @@ for i, review in enumerate(review_results[0]['reviews']):
     <td>4,189</td>
     <td>781</td>
     <td>Peer review dataset for CycleReviewer training</td>
-    <td><a href="https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Llama3.1-8B">🤗 link</a></td>
+    <td><a href="https://huggingface.co/datasets/WestlakeNLP/Review-5K">🤗 link</a></td>
   </tr>
   <tr>
     <td>Research-14K</td>
     <td>12,696</td>
     <td>802</td>
     <td>Research paper dataset for CycleResearcher training</td>
-    <td><a href="https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Llama3.1-70B">🤗 link</a></td>
+    <td><a href="https://huggingface.co/datasets/WestlakeNLP/Research-14K">🤗 link</a></td>
   </tr>
   <tr>
     <td>DeepReview-13K</td>
     <td>13,378</td>
     <td>1,286</td>
     <td>Multi-perspective review dataset for DeepReviewer training</td>
-    <td><a href="https://huggingface.co/WestlakeNLP/DeepReview-13K">🤗 link</a></td>
+    <td><a href="https://huggingface.co/datasets/WestlakeNLP/DeepReview-13K">🤗 link</a></td>
   </tr>
 </table>
 
