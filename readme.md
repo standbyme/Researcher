@@ -14,6 +14,13 @@
 </div>
 </div>
 
+
+
+### Update:
+
+[03/22/2025] We've just rolled out an exciting new feature for https://ai-researcher.net! 🎉 Now you can directly read arXiv papers with unprecedented ease! 📚✨ Simply transform any arXiv link from: `https://arxiv.org/abs/2503.08569` -> `https://ai-researcher.net/abs/2503.08569`
+
+
 ## 🔍 Overview
 
 CycleResearcher is a comprehensive open-source ecosystem for AI-powered academic research and review. Our system features three integrated components:
