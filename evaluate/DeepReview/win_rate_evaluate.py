@@ -11,7 +11,7 @@ from tqdm import tqdm
 class Config:
     """Configuration settings for the review comparison system."""
     # Proxy settings
-    PROXY = "http://127.0.0.1:10808"
+    PROXY = ""
 
     # API settings
     GEMINI_API_KEY = "xxxxxx"
