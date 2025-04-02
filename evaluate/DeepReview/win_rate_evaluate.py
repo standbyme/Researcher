@@ -14,7 +14,7 @@ class Config:
     PROXY = "http://127.0.0.1:10808"
 
     # API settings
-    GEMINI_API_KEY = "AIzaSyCE7nqkVyTaH-jYev-yG8q63Ltk0jRY_Mw"
+    GEMINI_API_KEY = "xxxxxx"
     GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
 
     # Model settings
