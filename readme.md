@@ -17,6 +17,7 @@
 
 
 ### Update:
+[04/06/2025] We have collected 400 papers related to AI Scientists in our [Awesome-AI-Scientist GitHub repository](https://github.com/ResearAI/Awesome-AI-Scientist). If you're interested in this field, don't miss out!
 
 [03/22/2025] We've just rolled out an exciting new feature for https://ai-researcher.net! 🎉 Now you can directly read arXiv papers with unprecedented ease! 📚✨ 
 
